@@ -1,0 +1,116 @@
+/* === Global body styles === */
+body {
+  font-size: 18px;
+  color: #2D3748;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Grid layout === */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+}
+
+header   { grid-area: header; }
+main     { grid-area: main; }
+aside    { grid-area: aside; }
+footer   { grid-area: footer; }
+
+/* === Header styles === */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #63B3ED;
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0.5em 0 0.2em;
+}
+
+header p {
+  margin: 0 0 1em;
+}
+
+header img {
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* === Blog post styles === */
+main h2 {
+  font-size: 32px;
+  color: #48BB78;
+  margin-top: 0;
+}
+
+.date-author {
+  color: #718096;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.float-left {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+.float-right {
+  float: right;
+  margin: 0 0 15px 15px;
+}
+
+/* === Sidebar styles === */
+aside h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 0;
+}
+
+.about {
+  background-color: #E2E8F0;
+  padding: 1em;
+}
+
+.social-media h3,
+.archives h3 {
+  color: #48BB78;
+}
+
+.about h3 {
+  color: #000000;
+}
+
+.social-media a,
+.archives a {
+  color: #4299E1;
+  text-decoration: none;
+}
+
+.social-media a:hover,
+.archives a:hover {
+  text-decoration: underline;
+}
+
+/* === Footer === */
+footer {
+  background: #2C5282;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
